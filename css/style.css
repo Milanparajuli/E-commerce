@@ -10,7 +10,7 @@ body{
 :root{
   --primary:indianred;
   --secondary:rgba(15,10,29,0.849);
-  --light:#2f3640;
+  --light:#747679;
 }
 header{
   height: 100vh;
@@ -50,4 +50,34 @@ header{
 }
 .nav1 .right i:hover{
   transform: rotate(360deg);
+}
+/* End nav1  */
+
+/* nav2 start  */
+.nav2{
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.nav2 .nav2-left,.nav2 .nav2-center,.nav2 .nav2-right{
+  flex-basis: 30%;
+  margin: auto;
+  cursor: pointer;
+}
+.nav2 .nav2-left i{
+  margin-left: 15px;
+}
+.nav2 .nav2-center h2{
+  color: var(--primary);
+  font-size: 2rem;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.nav2 .nav2-center h2 span{
+  color: var(--light);
 }
