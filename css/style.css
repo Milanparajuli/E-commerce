@@ -163,3 +163,94 @@ header{
   color: white;
 }
 /* end featured */
+.latest,.popular{
+  padding: 50px 100px;
+}
+.product-intro{
+  text-align: center;
+}
+.product-intro h2{
+  color: var(--primary);
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.product-intro h2 span{
+  color: var(--secondary);
+}
+.product-intro p{
+  color: gray;
+  margin: 15px 0;
+}
+.card-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin: 4rem 0;
+}
+.card-container .card{
+  flex-basis: 20%;
+  padding: 0.8rem;
+  position: relative;
+}
+.card img{
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+.card i{
+  color: goldenrod;
+  margin: 10px 0;
+}
+.card button{
+  color: white;
+  background-color: var(--secondary);
+  border: none;
+  outline: none;
+  margin-top: 15px;
+  padding: 5px 20px;
+}
+
+.card:hover img,.card:hover h1{
+  width: 80%;
+  color: var(--primary);
+}
+.card::before{
+  content: '20% off';
+  width: 25%;
+  height: 25px;
+  line-height: 25px;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--primary);
+  padding :0 4px;
+  transform: rotate(-20deg);
+}
+
+.trends{
+  padding: 50px 100px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.trends .swiper {
+  width: 100%;
+  padding: 50px;
+}
+
+.trends .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+}
+
+.trends .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* 59:31 */
