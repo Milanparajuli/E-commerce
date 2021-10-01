@@ -278,7 +278,10 @@ footer p{
 footer i{
   margin: 0 5px;
 }
-#sidenav, #menubar{
+#sidenav{
+  display: none;
+}
+#menubar{
   display: none;
 }
 @media only screen and (max-width:769px){
@@ -286,7 +289,7 @@ footer i{
     display: block;
   }
   #menubar{
-    display: block;
+    display:block;
     position: absolute;
     top: 50%;
     right: 0;
@@ -418,6 +421,8 @@ footer i{
   }
   .card-container{
     margin: 2rem 0;
+    display: block;
+    text-align: center;
   }
   .card-container .card{
     flex-basis: 100%;
