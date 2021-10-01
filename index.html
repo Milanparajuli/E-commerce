@@ -87,6 +87,26 @@
     </nav>
     <!-- nav3 end -->
 
+    <section id="sidenav">
+      <ul>
+        <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="#"><i class="fa fa-user"></i>Boy</a></li>
+        <li><a href="#"><i class="fa fa-users"></i>Accssories</a></li>
+        
+        <li><a href="#"><i class="fa fa-calendar-check-o"></i>Special</a></li>
+        <li><a href="#"><i class="fa fa-search"></i>Find</a></li>
+        <li><a href="#"><i class="fa fa-anchor"></i>
+          Toy<i class="fa fa-caret-down"></i></a>
+        <ul>
+          <li><a href="#"><i class="fa fa-clipboard"></i>Wooden</a></li>
+          <li><a href="#"><i class="fa fa-circle-o"></i>Plastic</a></li>
+          <li><a href="#"><i class="fa fa-gavel"></i>Iron</a></li>
+        </ul>
+        </li>
+      </ul>
+    </section>
+    <i class="fa fa-anchor" id="menubar"></i>
+
     <!-- featured start  -->
     <section class="featured">
       <div class="featured-text">
@@ -392,6 +412,21 @@
           el: ".swiper-pagination",
         },
       });
+    </script>
+
+    <script>
+      var sidenav= document.getElementById('sidenav');
+      var sidenav= document.getElementById('menubar');
+      sidenav.style.width="0px";
+      menubar.onclick=function(){
+        if( sidenav.style.width=="0px"){
+          sidenav.style.width="250px"
+        }
+        else{
+          sidenav.style.width="0px"
+        }
+      }
+
     </script>
 </body>
 </html>

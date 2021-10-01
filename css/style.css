@@ -109,6 +109,7 @@ header{
 .nav3 ul li a{
   text-decoration: none;
   color: black;
+  font-weight: 500;
   display: block;
 }
 .nav3 ul li a:hover{
@@ -163,7 +164,7 @@ header{
   color: white;
 }
 /* end featured */
-.latest, .popular{
+.latest,.popular{
   padding: 50px 100px;
 }
 .product-intro{
@@ -277,7 +278,87 @@ footer p{
 footer i{
   margin: 0 5px;
 }
+#sidenav, #menubar{
+  display: none;
+}
 @media only screen and (max-width:769px){
+  #sidenav{
+    display: block;
+  }
+  #menubar{
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0%,-50%);
+    z-index: 99;
+    background-color: var(--primary);
+    color: white;
+    font-size: 2rem;
+    padding: 20px 10px;
+    animation: animate 5s ease infinite;
+  }
+  @keyframes animate {
+    0%{
+      background-color: var(--secondary);
+    }
+    100%{
+      background-color: var(--primary);
+    }
+    
+  }
+
+  #sidenav{
+    width: 0px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: var(--third);
+    display: block;
+    padding-top: 70px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+  }
+  #sidenav ul{
+    list-style: none;
+  }
+  #sidenav ul li{
+    display: block;
+    width: 200px;
+    position: relative;
+    z-index: 99;
+    margin: 10px 20px;
+  }
+  #sidenav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    display: block;
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+  #sidenav ul li a:hover{
+    color: var(--primary);
+  }
+  #sidenav ul li i{
+    color: white;
+    margin: 0 5px;
+  }
+  #sidenav ul ul{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    display: none;
+  }
+  #sidenav ul ul li{
+    border-bottom: 1px solid white;
+  }
+  #sidenav ul li:hover>ul{
+    display: block;
+  }
+
   .nav1{
     position: relative;
     z-index: 2;
@@ -325,9 +406,8 @@ footer i{
   }
   .product-intro h2{
     color: var(--primary);
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.5rem;
     font-size: 2rem;
-    font-weight: bold;
   }
   .product-intro h2 span{
     color: var(--secondary);
@@ -345,13 +425,10 @@ footer i{
     position: relative;
     text-align: center;
   }
-  .card img{
-    width: 100%;
-    transition: 0.5s ease-in-out;
-  }
+  
   .card i{
     color: goldenrod;
-    margin: 10px 0;
+    margin: 5px 0;
   }
   .card button{
     color: white;
@@ -362,5 +439,25 @@ footer i{
     padding: 5px 20px;
   }
   
-  
+  .trends{
+    padding: 20px 50px;
+  }
+  .trends .swiper{
+    width: 100%;
+    padding: 50px;
+  }
+  .trends .swiper-slide{
+    width: 260px;
+    height: 260px;
+  }
+  .trends .swiper-slide img{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+   footer div{
+     flex-basis: 50%;
+     margin: 10px 0;
+   }
+
 }
