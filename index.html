@@ -346,73 +346,22 @@
     </section>
     <!-- end popular section  -->
 
-    <!-- trends start  -->
-    <section>
-    <div class="trends">
-      <div class="product-intro">
-        <h2>Top <span>Trends</span></h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis pariatur obcaecati eveniet quod a officiis!</p>
-      </div>
-
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="images/headphone1.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="images/headphone2.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="images/headphone3.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="images/headphone1.png" alt="">
-          </div>
-
-          <div class="swiper-pagination"></div>
-        </div>
-    </div>
-  </section>
-    <!-- End trends -->
+    
     
 
     <!-- footer start  -->
     <footer>
       <div>
-        <h1>Hamro <span>Pasal</span></h1>
-        <p>Everything for men and Women</p>
+        copyright &copy; <span id="getYear"></span>
+        <script>
+          document.getElementById("getYear").innerText = new Date().getFullYear();
+        </script>
       </div>
-      <div>
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-whatsapp"></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-twitter"></i>
-        <p>Design by Milan </p>
-      </div>
-      <div>copyright &copy; 2021</div>
     </footer>
     <!-- footer end  -->
 
 
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-          rotate: 50,
-          stretch: 0,
-          depth: 1200,
-          modifier: 1,
-          slideShadows: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-        },
-      });
-    </script>
+    
 
     <script>
       let sidenav= document.getElementById('sidenav');
