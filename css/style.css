@@ -8,10 +8,10 @@ body{
   /* font-family: 'Akaya Kanadaka', cursive; */
 }
 :root{
-  --primary:indianred;
-  --secondary:rgba(15,10,29,0.849);
-  --light:#152864;
-  --third:gray;
+  --primary:#001599;
+  --secondary:rgba(45, 133, 74, 0.849);
+  --light:#585d6d;
+  --third:rgb(96, 79, 124);
 }
 header{
   height: 100vh;
@@ -445,15 +445,15 @@ footer i{
   }
   
   .trends{
-    padding: 20px 50px;
+    padding: 10px 40px;
   }
   .trends .swiper{
     width: 100%;
     padding: 50px;
   }
   .trends .swiper-slide{
-    width: 260px;
-    height: 260px;
+    width: 150px;
+    height: 150px;
   }
   .trends .swiper-slide img{
     display: block;
